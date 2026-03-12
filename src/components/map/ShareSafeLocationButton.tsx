@@ -10,6 +10,7 @@ function toMapsLink(lat: number, lng: number): string {
   return `https://www.google.com/maps?q=${lat},${lng}`;
 }
 
+
 export default function ShareSafeLocationButton() {
   const { userLocation, locateUser, isLocating } = useMapState();
   const [status, setStatus] = useState<ShareStatus | null>(null);

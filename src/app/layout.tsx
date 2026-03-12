@@ -12,6 +12,12 @@ export const metadata: Metadata = {
   description:
     "Mapa interactivo de seguridad para la Zona Metropolitana de Guadalajara. Hospitales, comisarías, puntos púrpura, tótems C5, y más.",
   keywords: ["seguridad", "guadalajara", "mapa", "ZMG", "jalisco"],
+  icons: {
+    icon: [
+      { url: "/branding/logo-splash.svg", type: "image/svg+xml" },
+    ],
+    apple: "/branding/logo-splash.svg",
+  },
 };
 
 export default function RootLayout({
@@ -26,6 +32,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#0F172A" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link rel="icon" href="/branding/logo-splash.svg" type="image/svg+xml" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
