@@ -11,12 +11,18 @@ import { LEVEL_COLORS } from "@/constants/map";
 import { useMapState } from "@/contexts/MapContext";
 
 /**
+<<<<<<< HEAD
  * Crea un icono Leaflet personalizado usando SVG por tipo de POI.
  * Si falta el SVG, muestra el emoji como fallback.
  */
 function createPOIIcon(type: string, fallbackEmoji: string): L.DivIcon {
   const iconSrc = `/icons/poi/${type}.svg`;
 
+=======
+ * Crea un icono Leaflet personalizado con emoji
+ */
+function createPOIIcon(emoji: string): L.DivIcon {
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
   return L.divIcon({
     html: `
       <div style="
@@ -25,6 +31,7 @@ function createPOIIcon(type: string, fallbackEmoji: string): L.DivIcon {
         border:2px solid #2a2d3a;
         border-radius:10px;
         display:flex;align-items:center;justify-content:center;
+<<<<<<< HEAD
         box-shadow:0 4px 12px rgba(0,0,0,0.4);
         cursor:pointer;
         animation:poiScaleIn 0.35s cubic-bezier(0.34,1.56,0.64,1);
@@ -37,6 +44,13 @@ function createPOIIcon(type: string, fallbackEmoji: string): L.DivIcon {
         />
         <span style="display:none;align-items:center;justify-content:center;font-size:16px;line-height:1;">${fallbackEmoji}</span>
       </div>
+=======
+        font-size:16px;
+        box-shadow:0 4px 12px rgba(0,0,0,0.4);
+        cursor:pointer;
+        animation:poiScaleIn 0.35s cubic-bezier(0.34,1.56,0.64,1);
+      ">${emoji}</div>
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
     `,
     className: "",
     iconSize: [34, 34],
@@ -55,7 +69,11 @@ export default function POIMarkers() {
         <Marker
           key={poi.id}
           position={[poi.lat, poi.lng]}
+<<<<<<< HEAD
           icon={createPOIIcon(poi.type, poi.icon)}
+=======
+          icon={createPOIIcon(poi.icon)}
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
         >
           <Popup>
             <div style={{ fontFamily: "'DM Sans', sans-serif" }}>

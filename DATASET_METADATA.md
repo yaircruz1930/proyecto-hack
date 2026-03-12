@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 # DATASET_METADATA.md — EDUNEX
 
 > Documento de proveniencia, metodología y clasificación del dataset geoespacial ampliado.  
 > Fecha de creación: junio 2025 · Última actualización: marzo 2026 · Versión: 2.1
+=======
+# DATASET_METADATA.md — SafeMap GDL
+
+> Documento de proveniencia, metodología y clasificación del dataset geoespacial ampliado.  
+> Fecha de creación: junio 2025 · Versión: 2.0
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
 
 ---
 
@@ -11,7 +18,10 @@
 |-----------|----------|---------|
 | Puntos de Interés (POI) | **264** | `src/data/poi.ts` |
 | Zonas de Seguridad | **56** | `src/data/zones.geojson.ts` |
+<<<<<<< HEAD
 | Planteles UNE | **12** | `src/data/une.ts` |
+=======
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
 | Tipos de POI | **11** | `src/types/index.ts` |
 | Municipios cubiertos | **9** | Toda la ZMG |
 
@@ -47,6 +57,7 @@
 
 ---
 
+<<<<<<< HEAD
 ## 2.1 Dataset UNE (Planteles)
 
 | Campo | Tipo | Descripción |
@@ -66,6 +77,8 @@
 
 ---
 
+=======
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
 ## 3. Modelo de Riesgo para Zonas
 
 ### 3.1 Fórmula Compuesta
@@ -167,7 +180,10 @@ Donde cada indicador $I$ se normaliza en el rango $[0, 1]$.
 |---------|-------|---------|
 | 1.0 | mayo 2025 | Dataset inicial — 14 POI, 7 zonas |
 | 2.0 | junio 2025 | Expansión masiva — 264 POI, 56 zonas, 4 nuevos tipos, modelo de riesgo |
+<<<<<<< HEAD
 | 2.1 | marzo 2026 | Actualización EDUNEX, integración y ajuste de dataset UNE (12 planteles, incluido Zapopan Centro) |
+=======
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
 
 ---
 
@@ -177,4 +193,8 @@ Los datos de este dataset son una **compilación derivada** de fuentes públicas
 
 ---
 
+<<<<<<< HEAD
 *Generado automáticamente como parte de la expansión masiva de datos de EDUNEX.*
+=======
+*Generado automáticamente como parte de la expansión masiva de datos de SafeMap GDL.*
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469

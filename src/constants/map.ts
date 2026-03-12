@@ -7,6 +7,7 @@ import type { ZoneStyle, SecurityLevel } from "@/types";
 // Centro de Guadalajara
 export const GDL_CENTER: [number, number] = [20.676, -103.347];
 export const DEFAULT_ZOOM = 13;
+<<<<<<< HEAD
 export const MAP_RADIUS_KM = 50;
 
 const KM_PER_DEG_LAT = 111.32;
@@ -29,6 +30,8 @@ export function clampToMapBounds([lat, lng]: [number, number]): [number, number]
   const clampedLng = Math.min(Math.max(lng, west), east);
   return [clampedLat, clampedLng];
 }
+=======
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
 
 // Tiles de CartoDB
 export const TILE_URLS = {

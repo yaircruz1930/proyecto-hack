@@ -8,7 +8,11 @@ import { useRef, useEffect } from "react";
 import { Crosshair, Sun, Moon, Thermometer, LocateFixed, Loader2 } from "lucide-react";
 import { useMap } from "react-leaflet";
 import { useMapState } from "@/contexts/MapContext";
+<<<<<<< HEAD
 import { clampToMapBounds, GDL_CENTER, DEFAULT_ZOOM } from "@/constants/map";
+=======
+import { GDL_CENTER, DEFAULT_ZOOM } from "@/constants/map";
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
 
 export default function MapControls() {
   const map = useMap();
@@ -21,7 +25,11 @@ export default function MapControls() {
 
   const handleLocate = () => {
     if (userLocation) {
+<<<<<<< HEAD
       map.flyTo(clampToMapBounds(userLocation), 16, { duration: 1 });
+=======
+      map.flyTo(userLocation, 16, { duration: 1 });
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
     } else {
       locateUser();
     }
@@ -31,7 +39,11 @@ export default function MapControls() {
   const prevLocation = useRef(userLocation);
   useEffect(() => {
     if (userLocation && !prevLocation.current) {
+<<<<<<< HEAD
       map.flyTo(clampToMapBounds(userLocation), 16, { duration: 1 });
+=======
+      map.flyTo(userLocation, 16, { duration: 1 });
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
     }
     prevLocation.current = userLocation;
   }, [userLocation, map]);

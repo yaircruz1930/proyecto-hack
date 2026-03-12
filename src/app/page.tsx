@@ -7,7 +7,10 @@
 import { useState, useCallback } from "react";
 import dynamic from "next/dynamic";
 import Sidebar from "@/components/sidebar/Sidebar";
+<<<<<<< HEAD
 import SplashScreen from "@/components/ui/SplashScreen";
+=======
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
 import { Menu } from "lucide-react";
 
 // CRÍTICO: Leaflet necesita `window`, así que se carga
@@ -26,6 +29,7 @@ const MapRender = dynamic(() => import("@/components/map/MapRender"), {
 
 export default function HomePage() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+<<<<<<< HEAD
   const [splashDone, setSplashDone] = useState(false);
   const closeSidebar = useCallback(() => setSidebarOpen(false), []);
   const handleSplashFinished = useCallback(() => setSplashDone(true), []);
@@ -34,6 +38,12 @@ export default function HomePage() {
     <>
       {!splashDone && <SplashScreen onFinished={handleSplashFinished} />}
       <div className="flex h-dvh h-screen overflow-hidden">
+=======
+  const closeSidebar = useCallback(() => setSidebarOpen(false), []);
+
+  return (
+    <div className="flex h-dvh h-screen overflow-hidden">
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
       {/* Mobile toggle — safe area top */}
       <button
         onClick={() => setSidebarOpen(!sidebarOpen)}
@@ -57,6 +67,9 @@ export default function HomePage() {
       {/* Map */}
       <MapRender />
     </div>
+<<<<<<< HEAD
     </>
+=======
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
   );
 }

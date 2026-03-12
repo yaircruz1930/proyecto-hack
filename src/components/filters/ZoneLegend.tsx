@@ -36,7 +36,11 @@ export default function ZoneLegend() {
           }`} />
           <div className="text-left">
             <div className="text-[13px] transition-colors duration-200">{LEVEL_LABELS[level]}</div>
+<<<<<<< HEAD
             <div className="text-[11px] text-[#a0a4b0]">{sub}</div>
+=======
+            <div className="text-[11px] text-gray-500">{sub}</div>
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
           </div>
         </button>
       ))}

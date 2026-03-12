@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 # Documentación Técnica Integral - EDUNEX
 
 ## 1. Objetivo del sistema
 
 EDUNEX es una aplicación web de cartografía interactiva orientada a visualización de zonas de seguridad, localización de puntos de interés y cálculo de rutas rápidas dentro de la Zona Metropolitana de Guadalajara.
+=======
+# Documentación Técnica Integral - SafeMap GDL
+
+## 1. Objetivo del sistema
+
+SafeMap GDL es una aplicación web de cartografía interactiva orientada a visualización de zonas de seguridad, localización de puntos de interés y cálculo de rutas rápidas dentro de la Zona Metropolitana de Guadalajara.
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
 
 La solución integra:
 
@@ -33,8 +41,11 @@ La solución integra:
 - PostCSS
 - Autoprefixer
 - Lucide React para iconografía
+<<<<<<< HEAD
 - Paleta semántica basada en `#0F172A` (tokens `brand.*`)
 - Tipografía display selectiva con `EngraversGothicBT` para encabezados
+=======
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
 
 ### 2.4 Autenticación y datos (preparado)
 
@@ -182,18 +193,24 @@ Orquestador del mapa. Crea MapContainer y monta todas las capas operativas.
 ### src/components/map/POIMarkers.tsx
 Renderiza marcadores de puntos de interés filtrados, popup descriptivo y acción directa de cálculo de ruta.
 
+<<<<<<< HEAD
 ### src/components/map/UNEMarkers.tsx
 Renderiza marcadores para planteles UNE con popup de información institucional.
 
+=======
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
 ### src/components/map/RouteLayer.tsx
 Renderiza la ruta óptima calculada como polilínea y marcador de destino con información de distancia y tiempo.
 
 ### src/components/map/SearchBar.tsx
 Componente de búsqueda textual para filtrar POI por nombre o metadatos.
 
+<<<<<<< HEAD
 ### src/components/map/ShareSafeLocationButton.tsx
 Permite compartir ubicación actual mediante Web Share API con fallback a portapapeles.
 
+=======
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
 ### src/components/map/TileUpdater.tsx
 Selecciona y actualiza la capa de mosaicos según el tema visual activo.
 
@@ -211,9 +228,12 @@ Contenedor lateral principal de controles, autenticación, filtros, navegación 
 ### src/components/stats/StatsGrid.tsx
 Tablero resumido de métricas de operación (zonas, alertas y POI visibles).
 
+<<<<<<< HEAD
 ### src/components/stats/JudgesKPIBar.tsx
 Barra de KPIs superior para presentación operativa (planteles UNE, puntos visibles y zonas analizadas).
 
+=======
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
 ## 6.7 Componentes UI reutilizables
 
 ### src/components/ui/LiveDot.tsx
@@ -246,9 +266,12 @@ Dataset principal de puntos de interés con coordenadas, tipo, nivel y metadatos
 ### src/data/zones.geojson.ts
 Colección geoespacial de polígonos de zonas urbanas con clasificación de seguridad.
 
+<<<<<<< HEAD
 ### src/data/une.ts
 Dataset tipado de planteles UNE para despliegue de marcadores institucionales en mapa.
 
+=======
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
 ## 6.11 Hooks
 
 ### src/hooks/useDashboardStats.ts

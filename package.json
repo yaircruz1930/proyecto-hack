@@ -1,7 +1,12 @@
 {
+<<<<<<< HEAD
   "name": "edunex",
   "version": "1.0.0",
   "description": "EDUNEX — Mapa interactivo de seguridad para la Zona Metropolitana de Guadalajara",
+=======
+  "name": "safemap-gdl",
+  "version": "1.0.0",
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
   "private": true,
   "scripts": {
     "dev": "next dev",

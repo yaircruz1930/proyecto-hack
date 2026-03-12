@@ -94,6 +94,7 @@ export const UNE_PLANTELES: UNEPlantel[] = [
     lat: 20.5181,
     lng: -103.3786,
   },
+<<<<<<< HEAD
   {
     id: 12,
     name: "UNE Zapopan Centro",
@@ -101,4 +102,6 @@ export const UNE_PLANTELES: UNEPlantel[] = [
     lat: 20.7230,
     lng: -103.3910,
   },
+=======
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
 ];

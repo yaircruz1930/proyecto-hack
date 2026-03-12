@@ -6,6 +6,7 @@
 @tailwind components;
 @tailwind utilities;
 
+<<<<<<< HEAD
 /* ── EngraversGothicBT — fuente display local ── */
 @font-face {
   font-family: "EngraversGothicBT";
@@ -28,6 +29,8 @@
   --color-text-tertiary: #6b7280;
 }
 
+=======
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
 /* ── Reset ── */
 html, body {
   height: 100%;
@@ -48,16 +51,27 @@ input, select, textarea {
   width: 4px;
 }
 ::-webkit-scrollbar-thumb {
+<<<<<<< HEAD
   background: #4a5a70;
+=======
+  background: #2a2d3a;
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
   border-radius: 4px;
 }
 
 /* ── Leaflet popup override ── */
 .leaflet-popup-content-wrapper {
+<<<<<<< HEAD
   background: #1a2640 !important;
   color: #e8eaed !important;
   border-radius: 12px !important;
   border: 1px solid #4a5a70 !important;
+=======
+  background: #181a22 !important;
+  color: #e8eaed !important;
+  border-radius: 12px !important;
+  border: 1px solid #2a2d3a !important;
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
   box-shadow: 0 12px 40px rgba(0,0,0,0.6) !important;
   font-family: 'DM Sans', sans-serif !important;
 }
@@ -67,7 +81,11 @@ input, select, textarea {
 }
 
 .leaflet-popup-tip {
+<<<<<<< HEAD
   background: #1a2640 !important;
+=======
+  background: #181a22 !important;
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
 }
 
 /* ── Leaflet zoom override ── */
@@ -76,9 +94,15 @@ input, select, textarea {
 }
 
 .leaflet-control-zoom a {
+<<<<<<< HEAD
   background: #1a2640 !important;
   color: #e8eaed !important;
   border: 1px solid #4a5a70 !important;
+=======
+  background: #181a22 !important;
+  color: #e8eaed !important;
+  border: 1px solid #2a2d3a !important;
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
   width: 36px !important;
   height: 36px !important;
   line-height: 36px !important;
@@ -124,6 +148,7 @@ input, select, textarea {
   transition: opacity 0.4s ease, fill-opacity 0.4s ease, stroke-opacity 0.4s ease;
 }
 
+<<<<<<< HEAD
 /* ── Tono claro personalizado (base E5E7E6) ── */
 .map-light-tone .leaflet-tile-pane {
   filter: saturate(0.72) contrast(0.9) brightness(0.99) sepia(0.08);
@@ -133,6 +158,8 @@ input, select, textarea {
   background: #e5e7e6;
 }
 
+=======
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
 /* ── Leaflet popup fade ── */
 .leaflet-popup {
   animation: popupFadeIn 0.2s ease-out;
@@ -142,6 +169,7 @@ input, select, textarea {
   0% { opacity: 0; transform: translateY(4px); }
   100% { opacity: 1; transform: translateY(0); }
 }
+<<<<<<< HEAD
 
 /* ── Splash screen ── */
 .splash-overlay {
@@ -161,3 +189,5 @@ input, select, textarea {
   pointer-events: none;
   user-select: none;
 }
+=======
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469

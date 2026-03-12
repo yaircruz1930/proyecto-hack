@@ -8,12 +8,20 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
+<<<<<<< HEAD
           dark: "#0F172A",
           panel: "#1a2640",
           card: "#253550",
           hover: "#253550",
           surface3: "#3a4860",
           border: "#4a5a70",
+=======
+          dark: "#0f1117",
+          panel: "#181a22",
+          card: "#1e2130",
+          hover: "#262a3a",
+          border: "#2a2d3a",
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
         },
         accent: {
           green: "#34d399",
@@ -25,8 +33,12 @@ const config: Config = {
         },
       },
       fontFamily: {
+<<<<<<< HEAD
         sans: ["DM Sans", "system-ui", "sans-serif"],
         display: ["var(--font-display)", "Copperplate", "Copperplate Gothic Light", "Georgia", "serif"],
+=======
+        sans: ["DM Sans", "sans-serif"],
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
         mono: ["Space Mono", "monospace"],
       },
       animation: {

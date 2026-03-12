@@ -30,20 +30,34 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
       {/* Brand */}
       <div className="px-5 pt-5 pb-4 border-b border-brand-border safe-top">
         <div className="flex items-center justify-between">
+<<<<<<< HEAD
           <div className="flex items-center gap-2.5 font-display text-xl font-bold tracking-tight">
             <LiveDot />
             EDUNEX
+=======
+          <div className="flex items-center gap-2.5 font-mono text-xl font-bold tracking-tight">
+            <LiveDot />
+            SafeMap GDL
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
           </div>
           {/* Botón cerrar solo en móvil */}
           <button
             onClick={onClose}
+<<<<<<< HEAD
             className="md:hidden w-9 h-9 rounded-lg flex items-center justify-center text-[#a0a4b0] hover:text-white hover:bg-brand-hover transition-colors active:scale-95"
+=======
+            className="md:hidden w-9 h-9 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-brand-hover transition-colors active:scale-95"
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
             aria-label="Cerrar menú"
           >
             <X size={20} />
           </button>
         </div>
+<<<<<<< HEAD
         <div className="text-[11px] text-[#a0a4b0] mt-1 tracking-[2px] uppercase">
+=======
+        <div className="text-[11px] text-gray-500 mt-1 tracking-[2px] uppercase">
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
           Zona Metropolitana de Guadalajara
         </div>
       </div>

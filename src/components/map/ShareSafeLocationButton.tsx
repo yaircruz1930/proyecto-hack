@@ -10,7 +10,10 @@ function toMapsLink(lat: number, lng: number): string {
   return `https://www.google.com/maps?q=${lat},${lng}`;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
 export default function ShareSafeLocationButton() {
   const { userLocation, locateUser, isLocating } = useMapState();
   const [status, setStatus] = useState<ShareStatus | null>(null);
@@ -54,11 +57,19 @@ export default function ShareSafeLocationButton() {
 
       const [lat, lng] = location;
       const link = toMapsLink(lat, lng);
+<<<<<<< HEAD
       const text = `Ubicación compartida desde EDUNEX: ${link}`;
 
       if (navigator.share) {
         await navigator.share({
           title: "EDUNEX",
+=======
+      const text = `Ubicación compartida desde SafeMap GDL: ${link}`;
+
+      if (navigator.share) {
+        await navigator.share({
+          title: "SafeMap GDL",
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
           text,
           url: link,
         });

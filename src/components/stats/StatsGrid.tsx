@@ -31,7 +31,11 @@ function StatCard({ value, label, colorClass }: StatCardProps) {
       <div className={`font-mono text-[22px] font-bold mb-0.5 transition-transform ${colorClass} ${pop ? "animate-count-pop" : ""}`}>
         {value}
       </div>
+<<<<<<< HEAD
       <div className="text-[11px] text-[#a0a4b0]">{label}</div>
+=======
+      <div className="text-[11px] text-gray-500">{label}</div>
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
     </div>
   );
 }

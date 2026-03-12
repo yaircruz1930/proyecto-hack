@@ -10,12 +10,16 @@ import { Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import { UNE_PLANTELES } from "@/data/une";
 
+<<<<<<< HEAD
 const UNE_ICON_SRC = "/icons/poi/une_plantel.svg";
 
+=======
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
 const UNE_ICON = L.divIcon({
   html: `
     <div style="
       width:36px;height:36px;
+<<<<<<< HEAD
       background:#B91818;
       border:2px solid #e15b5b;
       border-radius:10px;
@@ -32,6 +36,17 @@ const UNE_ICON = L.divIcon({
       />
       <span style="display:none;align-items:center;justify-content:center;font-size:17px;line-height:1;">🏫</span>
     </div>
+=======
+      background:#7C3AED;
+      border:2px solid #a78bfa;
+      border-radius:10px;
+      display:flex;align-items:center;justify-content:center;
+      font-size:17px;
+      box-shadow:0 0 12px rgba(124,58,237,0.55),0 4px 12px rgba(0,0,0,0.4);
+      cursor:pointer;
+      animation:poiScaleIn 0.35s cubic-bezier(0.34,1.56,0.64,1);
+    ">🏫</div>
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
   `,
   className: "",
   iconSize: [36, 36],
@@ -60,7 +75,11 @@ export default function UNEMarkers() {
                 gap: 6,
               }}>
                 <span style={{
+<<<<<<< HEAD
                   background: "#B91818",
+=======
+                  background: "#7C3AED",
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
                   color: "#fff",
                   fontSize: 10,
                   fontWeight: 800,
@@ -74,7 +93,11 @@ export default function UNEMarkers() {
                 📍 {plantel.address}
               </div>
               {plantel.phone && (
+<<<<<<< HEAD
                 <div style={{ fontSize: 12, color: "#e15b5b" }}>
+=======
+                <div style={{ fontSize: 12, color: "#a78bfa" }}>
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
                   📞 {plantel.phone}
                 </div>
               )}

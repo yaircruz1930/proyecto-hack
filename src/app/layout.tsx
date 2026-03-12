@@ -8,6 +8,7 @@ import { MapProvider } from "@/contexts/MapContext";
 import "./globals.css";
 
 export const metadata: Metadata = {
+<<<<<<< HEAD
   title: "EDUNEX — Mapa de Seguridad",
   description:
     "Mapa interactivo de seguridad para la Zona Metropolitana de Guadalajara. Hospitales, comisarías, puntos púrpura, tótems C5, y más.",
@@ -18,6 +19,12 @@ export const metadata: Metadata = {
     ],
     apple: "/branding/logo-splash.svg",
   },
+=======
+  title: "SafeMap GDL — Mapa de Seguridad",
+  description:
+    "Mapa interactivo de seguridad para la Zona Metropolitana de Guadalajara. Hospitales, comisarías, puntos púrpura, tótems C5, y más.",
+  keywords: ["seguridad", "guadalajara", "mapa", "ZMG", "jalisco"],
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
 };
 
 export default function RootLayout({
@@ -29,10 +36,16 @@ export default function RootLayout({
     <html lang="es">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
+<<<<<<< HEAD
         <meta name="theme-color" content="#0F172A" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <link rel="icon" href="/branding/logo-splash.svg" type="image/svg+xml" />
+=======
+        <meta name="theme-color" content="#0f1117" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"

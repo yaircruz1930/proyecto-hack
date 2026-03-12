@@ -24,7 +24,11 @@ export default function POIFilters() {
           disabled={allActive}
           className={`flex-1 text-[11px] font-medium py-1.5 rounded-lg border transition-all duration-200 ${
             allActive
+<<<<<<< HEAD
               ? "border-brand-border text-[#6b7280] cursor-default opacity-50"
+=======
+              ? "border-brand-border text-gray-600 cursor-default opacity-50"
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
               : "border-accent-purple/40 text-accent-purple hover:bg-accent-purple/10"
           }`}
         >
@@ -35,7 +39,11 @@ export default function POIFilters() {
           disabled={noneActive}
           className={`flex-1 text-[11px] font-medium py-1.5 rounded-lg border transition-all duration-200 ${
             noneActive
+<<<<<<< HEAD
               ? "border-brand-border text-[#6b7280] cursor-default opacity-50"
+=======
+              ? "border-brand-border text-gray-600 cursor-default opacity-50"
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
               : "border-red-500/40 text-red-400 hover:bg-red-500/10"
           }`}
         >
@@ -46,7 +54,10 @@ export default function POIFilters() {
       {FILTER_CONFIG.map(({ key, label, icon }) => {
         const count = POI_DATA.filter((p) => p.type === key).length;
         const active = filters[key];
+<<<<<<< HEAD
         const iconSrc = `/icons/poi/${key}.svg`;
+=======
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
 
         return (
           <button
@@ -74,6 +85,7 @@ export default function POIFilters() {
             </div>
 
             {/* Icono */}
+<<<<<<< HEAD
             <span className={`w-5 h-5 shrink-0 transition-transform duration-200 flex items-center justify-center ${active ? "scale-100" : "scale-90"}`}>
               <img
                 src={iconSrc}
@@ -87,12 +99,19 @@ export default function POIFilters() {
               />
               <span style={{ display: "none" }} className="text-base leading-none">{icon}</span>
             </span>
+=======
+            <span className={`text-base shrink-0 transition-transform duration-200 ${active ? "scale-100" : "scale-90"}`}>{icon}</span>
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
 
             {/* Label */}
             <span className="text-[13px] flex-1 text-left transition-colors duration-200">{label}</span>
 
             {/* Count badge */}
+<<<<<<< HEAD
             <span className="font-mono text-[11px] text-[#a0a4b0] bg-brand-dark px-1.5 py-0.5 rounded-md">
+=======
+            <span className="font-mono text-[11px] text-gray-500 bg-brand-dark px-1.5 py-0.5 rounded-md">
+>>>>>>> c1317351fb402e19c8af5e67a3b648509edcf469
               {count}
             </span>
           </button>
